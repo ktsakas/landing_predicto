@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -415,6 +415,11 @@
           "id": "sM2N4qzil",
           "name": "logo",
           "filePath": "../public/plasmic/predicto_landing/images/logo.png"
+        },
+        {
+          "id": "T9ITiZiR2",
+          "name": "image 2",
+          "filePath": "../public/plasmic/predicto_landing/images/image2.png"
         }
       ],
       "indirect": false,
