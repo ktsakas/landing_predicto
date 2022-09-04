@@ -370,6 +370,7 @@
   object-fit: contain;
   max-width: 100%;
   width: 450px;
+  display: inline-block !important;
   margin: -100px 0px 0px;
 }
 .img__iWp7D > picture > img {
@@ -430,6 +431,7 @@
 .diagramSection:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  display: none;
 }
 .freeBox__sGNko {
   max-width: var(--token-sA4Cpk4pAy-RRO);
@@ -823,6 +825,205 @@
   .text__ds7Wm {
     font-size: 16px;
   }
+}
+.tracking:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.h2___2Ba3L {
+  position: relative;
+  width: 800px;
+  height: 132px;
+  max-width: 786px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  align-self: flex-start;
+  text-align: left;
+}
+.freeBox__ldTor {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.text__yr3Ea {
+  position: relative;
+  height: auto;
+  max-width: none;
+  margin-bottom: 0px;
+  text-align: left;
+  margin-right: 0px;
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .text__yr3Ea {
+    font-size: 16px;
+  }
+}
+.nasdaq {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 70px;
+}
+.nasdaq > picture > img {
+  object-fit: cover;
+}
+.nasdaq > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.allMajorCryptocurrencies {
+  position: relative;
+  height: auto;
+  max-width: none;
+  margin-bottom: 0px;
+  text-align: left;
+  margin-right: 0px;
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .allMajorCryptocurrencies {
+    font-size: 16px;
+  }
+}
+.img___6EcPn {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 70%;
+  align-self: flex-start;
+}
+.img___6EcPn > picture > img {
+  object-fit: cover;
+}
+.img___6EcPn > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.continuousIntegration:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.h2__lRimh {
+  position: relative;
+  width: 100%;
+  align-self: flex-start;
+  text-align: left;
+  font-size: 48px;
+  min-width: 0;
+}
+.text___3EVrb {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: none;
+  margin-bottom: 0px;
+  text-align: left;
+  color: #00000080;
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .text___3EVrb {
+    font-size: 16px;
+    padding-top: 36px;
+  }
+}
+.columns__udLj {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: visible;
+  min-width: 0;
+  padding: 8px;
+}
+.columns__udLj > :nth-child(2n + 1) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+.columns__udLj > :nth-child(2n + 2) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .columns__udLj {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .columns__udLj > :nth-child(1n + 1) {
+    width: calc((100% - 1 * 0px) * 12 / 12);
+  }
+}
+.column__gsUaH {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: visible;
+  box-shadow: none;
+  min-width: 0;
+  padding: 8px;
+}
+.img__txcI {
+  position: relative;
+  object-fit: cover;
+  box-shadow: 0px 4px 16px 0px #00000033;
+  height: 420px;
+  width: 610px;
+  align-self: flex-end;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.img__txcI > picture > img {
+  object-fit: cover;
+}
+.img__txcI > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.column__hOajI {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img__zocVg {
+  position: relative;
+  object-fit: cover;
+  width: 610px;
+  height: 420px;
+  align-self: flex-start;
+  box-shadow: 0px 4px 16px 0px #00000033;
+  object-position: 30% 50%;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.img__zocVg > picture > img {
+  object-fit: cover;
+  object-position: 30% 50%;
+}
+.img__zocVg > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+  object-position: 30% 50%;
 }
 .programmaticAccess:global(.__wab_instance) {
   max-width: 100%;

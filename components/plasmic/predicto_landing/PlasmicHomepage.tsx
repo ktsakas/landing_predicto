@@ -69,6 +69,10 @@ export type PlasmicHomepage__OverridesType = {
   navbar?: p.Flex<typeof Navbar>;
   h1?: p.Flex<"h1">;
   diagramSection?: p.Flex<typeof Section>;
+  tracking?: p.Flex<typeof Section>;
+  nasdaq?: p.Flex<typeof p.PlasmicImg>;
+  allMajorCryptocurrencies?: p.Flex<"div">;
+  continuousIntegration?: p.Flex<typeof Section>;
   programmaticAccess?: p.Flex<typeof Section>;
   gallerySection?: p.Flex<typeof Section>;
   productSection?: p.Flex<typeof Section>;
@@ -155,174 +159,158 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames("__wab_instance", sty.navbar)}
                   />
                 ) : null}
-
-                <div className={classNames(projectcss.all, sty.freeBox__qQmDx)}>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__j075D)}
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__qQmDx)}
                   >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__atXoJ)}
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__j075D)}
                     >
-                      <h1
-                        data-plasmic-name={"h1"}
-                        data-plasmic-override={overrides.h1}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h1,
-                          projectcss.__wab_text,
-                          sty.h1
-                        )}
-                      >
-                        {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Analytics for developers can be better"
-                          : "Stock & Cryptocurrency Forecasting AI\nDelivered to your inbox"}
-                      </h1>
-
                       <div
                         className={classNames(
                           projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__jx77O
+                          sty.freeBox__atXoJ
                         )}
                       >
-                        {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        ) : (
-                          <React.Fragment>
-                            <React.Fragment>
-                              {"Based on News & Options Data\nPowered by "}
-                            </React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ fontWeight: 700, color: "#C7C7C7" }}
-                            >
-                              {"Intelligible "}
-                            </span>
-                            <React.Fragment>
-                              {"Deep Learning models"}
-                            </React.Fragment>
-                          </React.Fragment>
-                        )}
-                      </div>
-
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___646W6
-                        )}
-                      >
-                        <Button
+                        <h1
+                          data-plasmic-name={"h1"}
+                          data-plasmic-override={overrides.h1}
                           className={classNames(
-                            "__wab_instance",
-                            sty.button__bRuDn
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1
                           )}
-                          color={
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? ("blueSmall" as const)
-                              : ("blue" as const)
-                          }
-                          endIcon={
-                            (
-                              hasVariant(globalVariants, "screen", "mobileOnly")
-                                ? true
-                                : true
-                            ) ? (
-                              <IconArrowRightsvgIcon
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__mb85
-                                )}
-                                role={"img"}
-                              />
-                            ) : null
-                          }
-                          link={"#" as const}
-                          showEndIcon={true}
-                          startIcon={
-                            <svg
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___3WsT8
-                              )}
-                              role={"img"}
-                            />
-                          }
                         >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__wPaGg
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "Try Demo For Free"
-                              : "Get Started"}
-                          </div>
-                        </Button>
-                      </p.Stack>
+                          {hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "Analytics for developers can be better"
+                            : "Stock & Cryptocurrency Forecasting AI\nDelivered to your inbox"}
+                        </h1>
 
-                      {(
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? true
-                          : false
-                      ) ? (
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox___4651B
+                            projectcss.__wab_text,
+                            sty.text__jx77O
+                          )}
+                        >
+                          {hasVariant(
+                            globalVariants,
+                            "screen",
+                            "mobileOnly"
+                          ) ? (
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                          ) : (
+                            <React.Fragment>
+                              <React.Fragment>
+                                {"Based on News & Options Data\nPowered by "}
+                              </React.Fragment>
+                              <span
+                                className={
+                                  "plasmic_default__all plasmic_default__span"
+                                }
+                                style={{ fontWeight: 700, color: "#C7C7C7" }}
+                              >
+                                {"Intelligible "}
+                              </span>
+                              <React.Fragment>
+                                {"Deep Learning models"}
+                              </React.Fragment>
+                            </React.Fragment>
+                          )}
+                        </div>
+
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___646W6
                           )}
                         >
                           <Button
                             className={classNames(
                               "__wab_instance",
-                              sty.button__eTx98
+                              sty.button__bRuDn
                             )}
-                            color={"blueBorder" as const}
-                            endIcon={
-                              <svg
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.svg__v8U7
-                                )}
-                                role={"img"}
-                              />
+                            color={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? ("blueSmall" as const)
+                                : ("blue" as const)
                             }
+                            endIcon={
+                              (
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? true
+                                  : true
+                              ) ? (
+                                <IconArrowRightsvgIcon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__mb85
+                                  )}
+                                  role={"img"}
+                                />
+                              ) : null
+                            }
+                            link={"#" as const}
+                            showEndIcon={true}
                             startIcon={
                               <svg
                                 className={classNames(
                                   projectcss.all,
-                                  sty.svg__h43PV
+                                  sty.svg___3WsT8
                                 )}
                                 role={"img"}
                               />
                             }
                           >
-                            {"Learn More"}
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__wPaGg
+                              )}
+                            >
+                              {hasVariant(
+                                globalVariants,
+                                "screen",
+                                "mobileOnly"
+                              )
+                                ? "Try Demo For Free"
+                                : "Get Started"}
+                            </div>
                           </Button>
+                        </p.Stack>
 
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : false
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___4651B
+                            )}
+                          >
                             <Button
                               className={classNames(
                                 "__wab_instance",
-                                sty.button__rmpcI
+                                sty.button__eTx98
                               )}
                               color={"blueBorder" as const}
                               endIcon={
                                 <svg
                                   className={classNames(
                                     projectcss.all,
-                                    sty.svg__fZdHi
+                                    sty.svg__v8U7
                                   )}
                                   role={"img"}
                                 />
@@ -331,7 +319,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 <svg
                                   className={classNames(
                                     projectcss.all,
-                                    sty.svg__vnyUg
+                                    sty.svg__h43PV
                                   )}
                                   role={"img"}
                                 />
@@ -339,34 +327,73 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Learn More"}
                             </Button>
-                          ) : null}
-                        </div>
-                      ) : null}
-                    </div>
 
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__ir3Sc)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__iWp7D)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"450px" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/predicto_landing/images/image.png",
-                          fullWidth: 1100,
-                          fullHeight: 2200,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  </p.Stack>
-                </div>
+                            {(
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? true
+                                : true
+                            ) ? (
+                              <Button
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.button__rmpcI
+                                )}
+                                color={"blueBorder" as const}
+                                endIcon={
+                                  <svg
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__fZdHi
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                startIcon={
+                                  <svg
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__vnyUg
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                              >
+                                {"Learn More"}
+                              </Button>
+                            ) : null}
+                          </div>
+                        ) : null}
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__ir3Sc
+                        )}
+                      >
+                        {true ? (
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__iWp7D)}
+                            displayHeight={"auto" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"450px" as const}
+                            loading={"lazy" as const}
+                            src={{
+                              src: "/plasmic/predicto_landing/images/image.png",
+                              fullWidth: 1100,
+                              fullHeight: 2200,
+                              aspectRatio: undefined
+                            }}
+                          />
+                        ) : null}
+                      </div>
+                    </p.Stack>
+                  </div>
+                ) : null}
               </p.Stack>
             ) : null}
 
@@ -424,182 +451,51 @@ function PlasmicHomepage__RenderFunc(props: {
               }}
             />
 
-            <Section
-              data-plasmic-name={"diagramSection"}
-              data-plasmic-override={overrides.diagramSection}
-              className={classNames("__wab_instance", sty.diagramSection)}
-              size={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? ("mobile" as const)
-                  : undefined
-              }
-            >
-              <div className={classNames(projectcss.all, sty.freeBox__sGNko)}>
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2___48Qiw
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Lorem ipsum dolor \nsit amet"
-                    : "Lorem ipsum dolor \nsit amet"}
-                </h2>
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__oyUvL
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-                </div>
-
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__rw6Kv)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? ("249px" as const)
-                      : ("100%" as const)
-                  }
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/predicto_landing/images/terminalpng.png",
-                    fullWidth: 624,
-                    fullHeight: 333,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__do2ZQ)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? ("auto" as const)
-                      : ("auto" as const)
-                  }
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/predicto_landing/images/line1Png.png",
-                    fullWidth: 11,
-                    fullHeight: 150,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__njMzf)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? ("50px" as const)
-                      : ("100%" as const)
-                  }
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/predicto_landing/images/lineBranchpng.png",
-                    fullWidth: 100,
-                    fullHeight: 100,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__vhBjz)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? ("auto" as const)
-                      : ("auto" as const)
-                  }
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? ("500px" as const)
-                      : ("770px" as const)
-                  }
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? ("auto" as const)
-                      : ("auto" as const)
-                  }
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/predicto_landing/images/line2Png.png",
-                    fullWidth: 844,
-                    fullHeight: 284,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__neWgq)}
-                >
-                  <DiagramCard
+            {true ? (
+              <Section
+                data-plasmic-name={"diagramSection"}
+                data-plasmic-override={overrides.diagramSection}
+                className={classNames("__wab_instance", sty.diagramSection)}
+                size={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("mobile" as const)
+                    : undefined
+                }
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__sGNko)}>
+                  <h2
                     className={classNames(
-                      "__wab_instance",
-                      sty.diagramCard__anSw
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2___48Qiw
                     )}
-                  />
+                  >
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Lorem ipsum dolor \nsit amet"
+                      : "Lorem ipsum dolor \nsit amet"}
+                  </h2>
 
-                  <DiagramCard
+                  <div
                     className={classNames(
-                      "__wab_instance",
-                      sty.diagramCard__tE5J
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__oyUvL
                     )}
-                  />
+                  >
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                  </div>
 
-                  <DiagramCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.diagramCard__jAsc8
-                    )}
-                  />
-                </p.Stack>
-
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__y2HlL)}
-                >
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img__irYh)}
+                    className={classNames(sty.img__rw6Kv)}
                     displayHeight={"auto" as const}
-                    displayMaxHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("none" as const)
-                    }
+                    displayMaxHeight={"none" as const}
                     displayMaxWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
+                        ? ("249px" as const)
                         : ("100%" as const)
                     }
                     displayMinHeight={"0" as const}
@@ -607,77 +503,43 @@ function PlasmicHomepage__RenderFunc(props: {
                     displayWidth={"auto" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/predicto_landing/images/dollarpng.png",
-                      fullWidth: 100,
-                      fullHeight: 100,
+                      src: "/plasmic/predicto_landing/images/terminalpng.png",
+                      fullWidth: 624,
+                      fullHeight: 333,
                       aspectRatio: undefined
                     }}
                   />
 
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img___0YmAn)}
+                    className={classNames(sty.img__do2ZQ)}
                     displayHeight={"auto" as const}
-                    displayMaxHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("none" as const)
-                    }
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("100%" as const)
-                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
                     displayMinHeight={"0" as const}
                     displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? ("auto" as const)
+                        : ("auto" as const)
+                    }
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/predicto_landing/images/messagepng.png",
-                      fullWidth: 100,
-                      fullHeight: 100,
+                      src: "/plasmic/predicto_landing/images/line1Png.png",
+                      fullWidth: 11,
+                      fullHeight: 150,
                       aspectRatio: undefined
                     }}
                   />
 
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img__nOrFp)}
+                    className={classNames(sty.img__njMzf)}
                     displayHeight={"auto" as const}
-                    displayMaxHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("none" as const)
-                    }
+                    displayMaxHeight={"none" as const}
                     displayMaxWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("100%" as const)
-                    }
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/predicto_landing/images/importpng.png",
-                      fullWidth: 100,
-                      fullHeight: 100,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__av5I7)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("none" as const)
-                    }
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
+                        ? ("50px" as const)
                         : ("100%" as const)
                     }
                     displayMinHeight={"0" as const}
@@ -694,104 +556,438 @@ function PlasmicHomepage__RenderFunc(props: {
 
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img__aEeyY)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={
+                    className={classNames(sty.img__vhBjz)}
+                    displayHeight={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("none" as const)
+                        ? ("auto" as const)
+                        : ("auto" as const)
                     }
+                    displayMaxHeight={"none" as const}
                     displayMaxWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("100%" as const)
+                        ? ("500px" as const)
+                        : ("770px" as const)
                     }
                     displayMinHeight={"0" as const}
                     displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? ("auto" as const)
+                        : ("auto" as const)
+                    }
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/predicto_landing/images/exportpng.png",
-                      fullWidth: 100,
-                      fullHeight: 100,
+                      src: "/plasmic/predicto_landing/images/line2Png.png",
+                      fullWidth: 844,
+                      fullHeight: 284,
                       aspectRatio: undefined
                     }}
                   />
 
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__cn4Pn)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("none" as const)
-                    }
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("100%" as const)
-                    }
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/predicto_landing/images/message2Png.png",
-                      fullWidth: 100,
-                      fullHeight: 100,
-                      aspectRatio: undefined
-                    }}
-                  />
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__neWgq)}
+                  >
+                    <DiagramCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.diagramCard__anSw
+                      )}
+                    />
 
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__uvTna)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("none" as const)
-                    }
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("72px" as const)
-                        : ("100%" as const)
-                    }
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/predicto_landing/images/message3Png.png",
-                      fullWidth: 100,
-                      fullHeight: 100,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </p.Stack>
+                    <DiagramCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.diagramCard__tE5J
+                      )}
+                    />
 
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__h2TMo
-                  )}
-                >
-                  {"Lorem ipsum dolor \nsit amet"}
-                </h2>
+                    <DiagramCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.diagramCard__jAsc8
+                      )}
+                    />
+                  </p.Stack>
 
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__y2HlL)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__irYh)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("none" as const)
+                      }
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("100%" as const)
+                      }
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/predicto_landing/images/dollarpng.png",
+                        fullWidth: 100,
+                        fullHeight: 100,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___0YmAn)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("none" as const)
+                      }
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("100%" as const)
+                      }
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/predicto_landing/images/messagepng.png",
+                        fullWidth: 100,
+                        fullHeight: 100,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__nOrFp)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("none" as const)
+                      }
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("100%" as const)
+                      }
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/predicto_landing/images/importpng.png",
+                        fullWidth: 100,
+                        fullHeight: 100,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__av5I7)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("none" as const)
+                      }
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("100%" as const)
+                      }
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/predicto_landing/images/lineBranchpng.png",
+                        fullWidth: 100,
+                        fullHeight: 100,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__aEeyY)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("none" as const)
+                      }
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("100%" as const)
+                      }
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/predicto_landing/images/exportpng.png",
+                        fullWidth: 100,
+                        fullHeight: 100,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__cn4Pn)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("none" as const)
+                      }
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("100%" as const)
+                      }
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/predicto_landing/images/message2Png.png",
+                        fullWidth: 100,
+                        fullHeight: 100,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__uvTna)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("none" as const)
+                      }
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("72px" as const)
+                          : ("100%" as const)
+                      }
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/predicto_landing/images/message3Png.png",
+                        fullWidth: 100,
+                        fullHeight: 100,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </p.Stack>
+
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__h2TMo
+                    )}
+                  >
+                    {"Lorem ipsum dolor \nsit amet"}
+                  </h2>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ds7Wm
+                    )}
+                  >
+                    {
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                  </div>
+                </div>
+              </Section>
+            ) : null}
+
+            <Section
+              data-plasmic-name={"tracking"}
+              data-plasmic-override={overrides.tracking}
+              className={classNames("__wab_instance", sty.tracking)}
+              size={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("mobile" as const)
+                  : undefined
+              }
+            >
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2___2Ba3L
+                )}
+              >
+                {"Tracking"}
+              </h2>
+
+              <div className={classNames(projectcss.all, sty.freeBox__ldTor)}>
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__ds7Wm
+                    sty.text__yr3Ea
                   )}
                 >
-                  {
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  }
+                  {"All Nasdaq-100 companies"}
+                </div>
+
+                <p.PlasmicImg
+                  data-plasmic-name={"nasdaq"}
+                  data-plasmic-override={overrides.nasdaq}
+                  alt={""}
+                  className={classNames(sty.nasdaq)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"100%" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/predicto_landing/images/image4.png",
+                    fullWidth: 976,
+                    fullHeight: 343,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <div
+                  data-plasmic-name={"allMajorCryptocurrencies"}
+                  data-plasmic-override={overrides.allMajorCryptocurrencies}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.allMajorCryptocurrencies
+                  )}
+                >
+                  {"All major cryptocurrencies"}
+                </div>
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___6EcPn)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"70%" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/predicto_landing/images/image5.png",
+                    fullWidth: 750,
+                    fullHeight: 260,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+            </Section>
+
+            <Section
+              data-plasmic-name={"continuousIntegration"}
+              data-plasmic-override={overrides.continuousIntegration}
+              className={classNames(
+                "__wab_instance",
+                sty.continuousIntegration
+              )}
+              size={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("mobile" as const)
+                  : undefined
+              }
+            >
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__lRimh
+                )}
+              >
+                {"Continuous Integration & Experimentation"}
+              </h2>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___3EVrb
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  : "Using datafloat.ai, our No-Code AI Forecasting Platform, to capture latest market information."}
+              </div>
+
+              <div className={classNames(projectcss.all, sty.columns__udLj)}>
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.column__gsUaH)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__txcI)}
+                      displayHeight={"420px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"none" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"610px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/predicto_landing/images/image2.png",
+                        fullWidth: 1280,
+                        fullHeight: 880,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                ) : null}
+
+                <div className={classNames(projectcss.all, sty.column__hOajI)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__zocVg)}
+                    displayHeight={"420px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"610px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/predicto_landing/images/forecast2Png.png",
+                      fullWidth: 635,
+                      fullHeight: 396,
+                      aspectRatio: undefined
+                    }}
+                  />
                 </div>
               </div>
             </Section>
@@ -1013,12 +1209,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"auto" as const}
                           loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/predicto_landing/images/galleri23Png.png",
-                            fullWidth: 700,
-                            fullHeight: 300,
-                            aspectRatio: undefined
-                          }}
                         />
                       </div>
                     </div>
@@ -1669,6 +1859,10 @@ const PlasmicDescendants = {
     "navbar",
     "h1",
     "diagramSection",
+    "tracking",
+    "nasdaq",
+    "allMajorCryptocurrencies",
+    "continuousIntegration",
     "programmaticAccess",
     "gallerySection",
     "productSection",
@@ -1684,6 +1878,10 @@ const PlasmicDescendants = {
   navbar: ["navbar"],
   h1: ["h1"],
   diagramSection: ["diagramSection"],
+  tracking: ["tracking", "nasdaq", "allMajorCryptocurrencies"],
+  nasdaq: ["nasdaq"],
+  allMajorCryptocurrencies: ["allMajorCryptocurrencies"],
+  continuousIntegration: ["continuousIntegration"],
   programmaticAccess: ["programmaticAccess"],
   gallerySection: ["gallerySection"],
   productSection: ["productSection"],
@@ -1704,6 +1902,10 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   h1: "h1";
   diagramSection: typeof Section;
+  tracking: typeof Section;
+  nasdaq: typeof p.PlasmicImg;
+  allMajorCryptocurrencies: "div";
+  continuousIntegration: typeof Section;
   programmaticAccess: typeof Section;
   gallerySection: typeof Section;
   productSection: typeof Section;
@@ -1781,6 +1983,10 @@ export const PlasmicHomepage = Object.assign(
     navbar: makeNodeComponent("navbar"),
     h1: makeNodeComponent("h1"),
     diagramSection: makeNodeComponent("diagramSection"),
+    tracking: makeNodeComponent("tracking"),
+    nasdaq: makeNodeComponent("nasdaq"),
+    allMajorCryptocurrencies: makeNodeComponent("allMajorCryptocurrencies"),
+    continuousIntegration: makeNodeComponent("continuousIntegration"),
     programmaticAccess: makeNodeComponent("programmaticAccess"),
     gallerySection: makeNodeComponent("gallerySection"),
     productSection: makeNodeComponent("productSection"),

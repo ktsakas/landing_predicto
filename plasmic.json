@@ -392,11 +392,6 @@
           "filePath": "../public/plasmic/predicto_landing/images/galleri11Png.png"
         },
         {
-          "id": "gmqogyNEwHwUML",
-          "name": "galleri2-3.png",
-          "filePath": "../public/plasmic/predicto_landing/images/galleri23Png.png"
-        },
-        {
           "id": "hRCTCH-AjOrs-_",
           "name": "galleri1-3.png",
           "filePath": "../public/plasmic/predicto_landing/images/galleri13Png.png"
@@ -425,6 +420,21 @@
           "id": "UI9_lcUSm",
           "name": "pipeline",
           "filePath": "../public/plasmic/predicto_landing/images/pipeline.png"
+        },
+        {
+          "id": "OrBLBv_VD",
+          "name": "image 4",
+          "filePath": "../public/plasmic/predicto_landing/images/image4.png"
+        },
+        {
+          "id": "6wXvlvkFt",
+          "name": "image 5",
+          "filePath": "../public/plasmic/predicto_landing/images/image5.png"
+        },
+        {
+          "id": "wTZtzj384",
+          "name": "forecast2.png",
+          "filePath": "../public/plasmic/predicto_landing/images/forecast2Png.png"
         }
       ],
       "indirect": false,
