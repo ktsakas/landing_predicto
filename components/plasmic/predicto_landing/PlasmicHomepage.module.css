@@ -1198,6 +1198,7 @@
 .productSection:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  display: none;
 }
 .freeBox__nv7T {
   display: flex;
@@ -1405,6 +1406,102 @@
 .productCard__tTygy:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+}
+.howItWorks:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.columns__pjxC5 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-width: 0;
+  padding: 8px;
+}
+.columns__pjxC5 > :nth-child(2n + 1) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+.columns__pjxC5 > :nth-child(2n + 2) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .columns__pjxC5 {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .columns__pjxC5 > :nth-child(1n + 1) {
+    width: calc((100% - 1 * 0px) * 12 / 12);
+  }
+}
+.column__dLeGl {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: visible;
+  min-width: 0;
+  padding: 8px;
+}
+.h2__ohMMl {
+  position: relative;
+  width: 800px;
+  height: auto;
+  max-width: 786px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  align-self: flex-start;
+  text-align: left;
+}
+.text__ru6In {
+  position: relative;
+  width: 600px;
+  height: auto;
+  max-width: none;
+  margin-bottom: 0px;
+  padding-top: 53px;
+  text-align: left;
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .text__ru6In {
+    font-size: 16px;
+  }
+}
+.column__vCqaJ {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img__ze60N {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__ze60N > picture > img {
+  object-fit: cover;
+}
+.img__ze60N > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
 }
 .aboutSection:global(.__wab_instance) {
   max-width: 100%;

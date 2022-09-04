@@ -420,6 +420,11 @@
           "id": "T9ITiZiR2",
           "name": "image 2",
           "filePath": "../public/plasmic/predicto_landing/images/image2.png"
+        },
+        {
+          "id": "UI9_lcUSm",
+          "name": "pipeline",
+          "filePath": "../public/plasmic/predicto_landing/images/pipeline.png"
         }
       ],
       "indirect": false,

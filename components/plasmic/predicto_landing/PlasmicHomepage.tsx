@@ -72,6 +72,7 @@ export type PlasmicHomepage__OverridesType = {
   programmaticAccess?: p.Flex<typeof Section>;
   gallerySection?: p.Flex<typeof Section>;
   productSection?: p.Flex<typeof Section>;
+  howItWorks?: p.Flex<typeof Section>;
   aboutSection?: p.Flex<typeof Section>;
   priceSection?: p.Flex<typeof PriceSection>;
   startSection?: p.Flex<typeof Section>;
@@ -847,7 +848,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   src={{
                     src: "/plasmic/predicto_landing/images/macbookpng.png",
                     fullWidth: 1800,
-                    fullHeight: 1750,
+                    fullHeight: 1870,
                     aspectRatio: undefined
                   }}
                 />
@@ -1025,114 +1026,173 @@ function PlasmicHomepage__RenderFunc(props: {
                 </div>
               </Section>
             ) : null}
+            {true ? (
+              <Section
+                data-plasmic-name={"productSection"}
+                data-plasmic-override={overrides.productSection}
+                className={classNames("__wab_instance", sty.productSection)}
+                size={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("mobile" as const)
+                    : undefined
+                }
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__nv7T)}>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__faYjm
+                    )}
+                  >
+                    {"Lorem ipsum dolor sit amet"}
+                  </h2>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__a0Cu9
+                    )}
+                  >
+                    {
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                  </div>
+
+                  <Button
+                    className={classNames("__wab_instance", sty.button__jlrVn)}
+                    color={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? ("blue" as const)
+                        : ("blue" as const)
+                    }
+                    endIcon={
+                      <svg
+                        className={classNames(projectcss.all, sty.svg__jlcFt)}
+                        role={"img"}
+                      />
+                    }
+                    link={"#" as const}
+                    startIcon={
+                      <svg
+                        className={classNames(projectcss.all, sty.svg___6XJi)}
+                        role={"img"}
+                      />
+                    }
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__yOYra
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "Get Started"
+                        : "Get Started"}
+                    </div>
+                  </Button>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__h7IKy)}
+                  >
+                    <ProductCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.productCard__v7AFl
+                      )}
+                    />
+
+                    <ProductCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.productCard__o17T
+                      )}
+                    />
+                  </p.Stack>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__aabzE)}
+                  >
+                    <ProductCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.productCard__kq4Wx
+                      )}
+                    />
+
+                    <ProductCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.productCard__tTygy
+                      )}
+                    />
+                  </p.Stack>
+                </div>
+              </Section>
+            ) : null}
 
             <Section
-              data-plasmic-name={"productSection"}
-              data-plasmic-override={overrides.productSection}
-              className={classNames("__wab_instance", sty.productSection)}
+              data-plasmic-name={"howItWorks"}
+              data-plasmic-override={overrides.howItWorks}
+              className={classNames("__wab_instance", sty.howItWorks)}
               size={
                 hasVariant(globalVariants, "screen", "mobileOnly")
                   ? ("mobile" as const)
                   : undefined
               }
             >
-              <div className={classNames(projectcss.all, sty.freeBox__nv7T)}>
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__faYjm
-                  )}
-                >
-                  {"Lorem ipsum dolor sit amet"}
-                </h2>
+              <div className={classNames(projectcss.all, sty.columns__pjxC5)}>
+                <div className={classNames(projectcss.all, sty.column__dLeGl)}>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__ohMMl
+                    )}
+                  >
+                    {"How does it work?"}
+                  </h2>
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__a0Cu9
-                  )}
-                >
-                  {
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  }
-                </div>
-
-                <Button
-                  className={classNames("__wab_instance", sty.button__jlrVn)}
-                  color={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? ("blue" as const)
-                      : ("blue" as const)
-                  }
-                  endIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg__jlcFt)}
-                      role={"img"}
-                    />
-                  }
-                  link={"#" as const}
-                  startIcon={
-                    <svg
-                      className={classNames(projectcss.all, sty.svg___6XJi)}
-                      role={"img"}
-                    />
-                  }
-                >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__yOYra
+                      sty.text__ru6In
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "Get Started"
-                      : "Get Started"}
+                    {
+                      "Predicto consumes raw data from a diverse list of data sources. Our models generate short-term forecasts and trades. By monitoring our models' recent performance, we filter those trades daily. Our AI market insights are delivered to your inbox daily or on your request. Everything automated."
+                    }
                   </div>
-                </Button>
+                </div>
 
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__h7IKy)}
-                >
-                  <ProductCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.productCard__v7AFl
-                    )}
+                <div className={classNames(projectcss.all, sty.column__vCqaJ)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__ze60N)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/predicto_landing/images/pipeline.png",
+                      fullWidth: 1445,
+                      fullHeight: 1103,
+                      aspectRatio: undefined
+                    }}
                   />
-
-                  <ProductCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.productCard__o17T
-                    )}
-                  />
-                </p.Stack>
-
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__aabzE)}
-                >
-                  <ProductCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.productCard__kq4Wx
-                    )}
-                  />
-
-                  <ProductCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.productCard__tTygy
-                    )}
-                  />
-                </p.Stack>
+                </div>
               </div>
             </Section>
 
@@ -1612,6 +1672,7 @@ const PlasmicDescendants = {
     "programmaticAccess",
     "gallerySection",
     "productSection",
+    "howItWorks",
     "aboutSection",
     "priceSection",
     "startSection",
@@ -1626,6 +1687,7 @@ const PlasmicDescendants = {
   programmaticAccess: ["programmaticAccess"],
   gallerySection: ["gallerySection"],
   productSection: ["productSection"],
+  howItWorks: ["howItWorks"],
   aboutSection: ["aboutSection"],
   priceSection: ["priceSection"],
   startSection: ["startSection", "h3"],
@@ -1645,6 +1707,7 @@ type NodeDefaultElementType = {
   programmaticAccess: typeof Section;
   gallerySection: typeof Section;
   productSection: typeof Section;
+  howItWorks: typeof Section;
   aboutSection: typeof Section;
   priceSection: typeof PriceSection;
   startSection: typeof Section;
@@ -1721,6 +1784,7 @@ export const PlasmicHomepage = Object.assign(
     programmaticAccess: makeNodeComponent("programmaticAccess"),
     gallerySection: makeNodeComponent("gallerySection"),
     productSection: makeNodeComponent("productSection"),
+    howItWorks: makeNodeComponent("howItWorks"),
     aboutSection: makeNodeComponent("aboutSection"),
     priceSection: makeNodeComponent("priceSection"),
     startSection: makeNodeComponent("startSection"),
